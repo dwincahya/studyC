@@ -1,0 +1,10 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c11 -Iinclude
+SRC = src/main.c src/nilai.c
+TARGET = nilai.exe
+
+$(TARGET): $(SRC)
+	$(CC) $(CFLAGS) -o $(TARGET) $(SRC)
+
+clean:
+	del /f $(TARGET)
