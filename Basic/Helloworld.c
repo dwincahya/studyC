@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  printf("Hello World!");
+  char name[50] = "Cahya";
+  printf("Hello %s, %s", name, "Welcome To C");
   return 0;
 } 
